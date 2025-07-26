@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¡Level 5: Cumpleaños de Juan Pablo José!</title>
+
+  <!-- Pixel font estilo arcade 8-bit -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+
+  <style>
+    /* Base y reset minimal */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #7EC0EE;              /* Cielo azul NES */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    /* Contenedor general con borde estilo “bloques” */
+    .frame {
+      background: #FFCC00;              /* Amarillo Mario */
+      border: 12px solid #40210F;       /* Marrón ‘ladrillo’ */
+      padding: 16px;
+      max-width: 360px;
+      text-align: center;
+      box-shadow: 0 8px 0px #000;
+    }
+
+    /* Títulos y textos */
+    h1 {
+      font-size: 1rem;
+      color: #E53935;                   /* Rojo Mario */
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 0.75rem;
+      line-height: 1.2;
+      margin: 8px 0;
+      color: #000;
+    }
+
+    /* Sprite de Mario */
+    .sprite {
+      width: 128px;
+      height: auto;
+      image-rendering: pixelated;       /* Acentuar pixeles */
+      margin: 0 auto 12px;
+    }
+
+    /* Detalle footer estilo block */
+    .footer {
+      margin-top: 16px;
+      font-size: 0.6rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="frame">
+    <h1>¡LEVEL 5!</h1>
+    <img src="mario.png" alt="Mario NES 8-bit" class="sprite" />
+    <h1>Cumpleaños</h1>
+    <p><strong>Juan Pablo José</strong></p>
+    <p>Están cordialmente invitados</p>
+    <p>a cantar el Cumpleaños Feliz</p>
+    <p><strong>Domingo 27 de julio de 2025</strong></p>
+    <p><strong>Casa de Juan Pablo José</strong></p>
+    <p><strong>6:00 PM</strong></p>
+    <div class="footer">
+      ¡Nos vemos en el Reino Champiñón! 🍄
+    </div>
+  </div>
+</body>
+</html>
